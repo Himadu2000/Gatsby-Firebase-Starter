@@ -27,7 +27,9 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.4",
     "@types/react-helmet": "^6.0.0",
+    "@types/react-test-renderer": "^16.9.2",
     "babel-jest": "^26.1.0",
     "babel-preset-gatsby": "^0.5.2",
     "cross-env": "^7.0.2",
@@ -51,7 +53,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
-    "deploy": "gatsby clean && gatsby build && firebase deploy && gatsby clean"
+    "deploy": "gatsby clean && yarn test && gatsby build && firebase deploy && gatsby clean"
   },
   "repository": {
     "type": "git",
